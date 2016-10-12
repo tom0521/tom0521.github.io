@@ -1,5 +1,25 @@
 h1 {
 	font-size: 40px;
+	font-family: Monospace;
+	color: blue;
 	text-align: left;
-	font-family: "Monospace";
+}
+
+p {
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: -webkit-center 
+}
+
+h2 {
+	font-size: 30px;
+	font-family: cursive;
+	color: blue;
+	text-align:left;
+}
+
+ul {
+	text-align: left;
+	font-size: 20px;
+	font-family:cursive;
 }
