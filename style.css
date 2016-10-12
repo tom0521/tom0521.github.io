@@ -1,19 +1,19 @@
 h1 {
 	font-size: 40px;
-	font-family: "Monospace";
+	font-family: monospace;
 	color: blue;
 	text-align: left;
 }
 
 p {
 	font-size: 20px;
-	font-family: "sans-serif";
+	font-family: sans-serif;
 	text-align: center;
 }
 
 h2 {
 	font-size: 30px;
-	font-family: "cursive";
+	font-family: cursive;
 	color: blue;
 	text-align: left;
 }
@@ -21,5 +21,5 @@ h2 {
 ul {
 	text-align: left;
 	font-size: 20px;
-	font-family: "cursive";
+	font-family: cursive;
 }
