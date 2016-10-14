@@ -6,18 +6,24 @@ html, body {
 }
 
 .title {
-    height: 10px;
-    width: 300px;
-	position: fixed;
-	background-color: cornflowerblue;
-    font-family: "Courier New";
+    position: fixed;
+    margin-top: .5em;
+}
+
+#underline {
+    height: .5em;
+    width: 22em;
+    background-color: cornflowerblue;
+    margin: 0em;
+    display: block;
 }
 
 h1 {
     /*color: white;*/
-    margin: 0px;
-    letter-spacing: 2px;
-    padding-top: 10px;
+    font-family: "Courier New";
+    display: block;
+    margin: 0em;
+    letter-spacing: .1em;
     font-size: 2em;
     font-weight: 900;
 
@@ -30,10 +36,26 @@ h1 {
     right: 0;
 }
 
-.profile_picture {
+#profile_picture {
     display: block;
+    border: .75em solid cornflowerblue;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
     border-radius: 100%;
-    padding-bottom: 10px;
+}
+
+#about_me {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: 1.25em;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+
 }
