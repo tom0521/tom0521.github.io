@@ -1,10 +1,39 @@
-#title {
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    height: 10px;
+    width: 300px;
 	position: fixed;
 	background-color: cornflowerblue;
-	border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    font-size: xx-large;
     font-family: "Courier New";
-    color: white;
+}
+
+h1 {
+    /*color: white;*/
+    margin: 0px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    font-size: 2em;
+    font-weight: 900;
+
+}
+
+.centerfold {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+.profile_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    padding-bottom: 10px;
 }
