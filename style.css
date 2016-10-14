@@ -1,25 +1,10 @@
-h1 {
-	font-size: 40px;
-	font-family: monospace;
-	color: blue;
-	text-align: left;
-}
-
-p {
-	font-size: 20px;
-	font-family: sans-serif;
-	text-align: center;
-}
-
-h2 {
-	font-size: 30px;
-	font-family: cursive;
-	color: blue;
-	text-align: left;
-}
-
-ul {
-	text-align: left;
-	font-size: 20px;
-	font-family: cursive;
+#title {
+	position: fixed;
+	background-color: cornflowerblue;
+	border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: xx-large;
+    font-family: "Courier New";
+    color: white;
 }
