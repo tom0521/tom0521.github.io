@@ -20,7 +20,7 @@ h1 {
       height: 100%;
 }
 
-.footer {
+footer {
       position: fixed;
       bottom: 0;
       background-color: #555;
