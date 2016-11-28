@@ -2,10 +2,9 @@
     color: cornflowerblue;
 }
 
-.centerpiece {
-    text-align: center;
-    padding: 50px 30px;
+h1 {
     font-family: "Monoton";
+    
 }
 
 .navbar {
