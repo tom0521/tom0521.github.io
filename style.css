@@ -8,11 +8,13 @@ h1 {
 }
 
 .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+    margin-bottom: 0;
+    border-radius: 0;
+}
 
-.row.content {height: 450px}
+.row.content {
+    height: 450px;
+}
 
 .sidenav {
       padding-top: 20px;
