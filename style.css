@@ -1,10 +1,25 @@
-.color {
+.text_color {
     color: cornflowerblue;
+}
+
+.logo {
+    color: cornflowerblue;
+    font-size: 30px;
+    font-family: "Rubik One";
 }
 
 h1 {
     font-family: "Monoton";
+    text-shadow: 4px 4px 4px #aaa
+}
 
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .navbar {
@@ -12,9 +27,7 @@ h1 {
     border-radius: 0;
 }
 
-.row.content {
-    height: 450px;
-}
+.row.content {height: 450px;}
 
 .sidenav {
       padding-top: 20px;
