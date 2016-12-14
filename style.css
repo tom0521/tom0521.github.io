@@ -1,3 +1,6 @@
+body{
+}
+
 .text_color {
     color: cornflowerblue;
 }
@@ -8,9 +11,23 @@
     font-family: "Rubik One";
 }
 
+.centerfold {
+    padding-top: 50px;
+    font-family: "Muli";
+    font-size: 17px;
+}
+
+.links {
+    padding: 10px;
+}
+
 h1 {
-    font-family: "Monoton";
-    text-shadow: 4px 4px 4px #aaa
+    font-family: "Rubik One";
+    text-shadow: 0px 2px black;
+}
+
+h3 {
+    font-family: "Rubik One";
 }
 
 a {
@@ -27,7 +44,7 @@ a:hover {
     border-radius: 0;
 }
 
-.row.content {height: 450px;}
+.row.content {height: 1000px;}
 
 .sidenav {
       padding-top: 20px;
