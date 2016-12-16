@@ -1,6 +1,10 @@
 body{
 }
 
+#myCanvas {
+  position: fixed;
+}
+
 .text_color {
     color: cornflowerblue;
 }
@@ -17,8 +21,22 @@ body{
     font-size: 17px;
 }
 
+.about_paragraph {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.about_topic {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .links {
     padding: 10px;
+}
+
+hr {
+    border: 1px solid cornflowerblue;
 }
 
 h1 {
@@ -39,23 +57,24 @@ a:hover {
   text-decoration: none;
 }
 
+#graduation {
+    height: 200px;
+    width: auto;
+}
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
 }
 
-.row.content {height: 1000px;}
+.row.content {
+    height: 500px;
+}
 
 .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
-}
-
-footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
 }
 
 @media screen and (max-width: 767px) {

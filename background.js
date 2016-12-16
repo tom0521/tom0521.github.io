@@ -1,10 +1,9 @@
-/*var canvas = document.getCSSCanvasContext("2d", "mycanvas", canvas.width, canvas.height);
-document.querySelector("canvas");
+var canvas = document.getElementById("myCanvas");
+canvas.height = document.body.scrollHeight;
+canvas.width = document.body.offsetWidth;
 var ctx = canvas.getContext("2d");
-var background = "#eeeeee"; // '#001c33'
-var network = "#616161";  // "#448fda"; a = color: #ffff66;
+var hex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
 
-var TAU = 2 * Math.PI;
 
 times = [];
 function loop() {
@@ -14,12 +13,15 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-function Ball (startX, startY, startVelX, startVelY) {
-  this.x = startX || Math.random() * canvas.width;
-  this.y = startY || Math.random() * canvas.height;
+function Bubble () {
+  this.x = Math.random() * canvas.width;
+  this.y = Math.random() * canvas.height;
+  this.color = "#00" + hex[Math.trunc(Math.random()*hex.length-1)] + "" + hex[Math.trunc(Math.random()*hex.length-1)] + "ff";
+  this.alpha = Math.random() * 0.75;
+  this.radius = 10 + (Math.random() * 40);
   this.vel = {
-    x: startVelX || Math.random() * 2 - 1,
-    y: startVelY || Math.random() * 2 - 1
+    x: Math.random() * 2 - 1,
+    y: Math.random() * 2 - 1
   };
   this.update = function(canvas) {
     if (this.x > canvas.width + 50 || this.x < -50) {
@@ -33,49 +35,35 @@ function Ball (startX, startY, startVelX, startVelY) {
   };
   this.draw = function(ctx, can) {
     ctx.beginPath();
-    ctx.globalAlpha = .4;
-    ctx.fillStyle = network;
-    ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
+    ctx.globalAlpha = this.alpha;
+    ctx.fillStyle = this.color;
+    ctx.arc(this.x, this.y, this.radius, 0, 2*Math.PI);
+    ctx.lineWidth = 0;
     ctx.fill();
   }
 }
 
-var balls = [];
-for (var i = 0; i < canvas.width * canvas.height / (65*65); i++) {
-  balls.push(new Ball(Math.random() * canvas.width, Math.random() * canvas.height));
+var bubbles = [];
+for (var i = 0; i < canvas.width * canvas.height / 10000; i++) {
+  bubbles.push(new Bubble());
 }
 
 var lastTime = Date.now();
+
 function update() {
   var diff = Date.now() - lastTime;
   for (var frame = 0; frame * 50 < diff; frame++) {
-    for (var index = 0; index < balls.length; index++) {
-      balls[index].update(canvas);
+    for (var index = 0; index < bubbles.length; index++) {
+      bubbles[index].update(canvas);
     }
   }
   lastTime = Date.now();
 }
 
 function draw() {
-  ctx.globalAlpha=1;
-  ctx.fillStyle = background;
-  ctx.fillRect(0,0,canvas.width, canvas.height);
-  for (var i = 0; i < balls.length; i++) {
-    var ball = balls[i];
-    ball.draw(ctx, canvas);
-    ctx.beginPath();
-    for (var j = balls.length - 1; j > i; j += -1) {
-      var ball2 = balls[j];
-      var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
-        if (dist < 100) {
-          ctx.strokeStyle = network;
-          ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
-          ctx.lineWidth = "2px";
-          ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
-          ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
-        }
-    }
-    ctx.stroke();
+  for (var i = 0; i < bubbles.length; i++) {
+    var bubble = bubbles[i];
+    bubble.draw(ctx, canvas);
   }
 }
 
@@ -86,4 +74,4 @@ function resize() {
 window.addEventListener('orientationchange', resize, true);
 window.addEventListener('resize', resize, true);
 
-loop();*/
+loop();
