@@ -1,5 +1,5 @@
 var canvas = document.getElementById("myCanvas");
-canvas.height = document.body.scrollHeight;
+canvas.height = document.body.offsetHeight;
 canvas.width = document.body.offsetWidth;
 var ctx = canvas.getContext("2d");
 var hex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
@@ -33,7 +33,7 @@ function Bubble () {
     this.x += this.vel.x;
     this.y += this.vel.y;
   };
-  this.draw = function(ctx, can) {
+  this.draw = function(ctx) {
     ctx.beginPath();
     ctx.globalAlpha = this.alpha;
     ctx.fillStyle = this.color;
