@@ -1,5 +1,5 @@
 var canvas = document.getElementById("myCanvas");
-canvas.height = document.body.offsetHeight;
+canvas.height = document.body.offsetHeight * 2;
 canvas.width = document.body.offsetWidth;
 var ctx = canvas.getContext("2d");
 var hex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
@@ -69,7 +69,7 @@ function draw() {
 
 function resize() {
   canvas.width = document.body.offsetWidth;
-  canvas.height = document.body.scrollHeight;
+  canvas.height = document.body.scrollHeight * 2;
 }
 window.addEventListener('orientationchange', resize, true);
 window.addEventListener('resize', resize, true);
