@@ -16,7 +16,9 @@ function loop() {
 function Bubble () {
   this.x = Math.random() * canvas.width;
   this.y = Math.random() * canvas.height;
-  this.color = "#00" + hex[Math.trunc(Math.random()*hex.length-1)] + "" + hex[Math.trunc(Math.random()*hex.length-1)] + "ff";
+  this.color = "#" + hex[Math.trunc(Math.random()*hex.length-1)] + hex[Math.trunc(Math.random()*hex.length-1)]
+                   + hex[Math.trunc(Math.random()*hex.length-1)] + hex[Math.trunc(Math.random()*hex.length-1)]
+                   + hex[Math.trunc(Math.random()*hex.length-1)] + hex[Math.trunc(Math.random()*hex.length-1)];
   this.alpha = Math.random() * 0.75;
   this.radius = 10 + (Math.random() * 40);
   this.vel = {

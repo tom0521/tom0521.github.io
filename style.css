@@ -2,23 +2,23 @@ body{
 }
 
 #myCanvas {
-  position: fixed;
+    background-color: black;
+    position: fixed;
 }
 
 .text_color {
-    color: cornflowerblue;
+    color: white;
 }
 
 .logo {
-    color: cornflowerblue;
     font-size: 30px;
-    font-family: "Rubik One";
+    font-family: 'Press Start 2P', cursive;
 }
 
 .centerfold {
     padding-top: 50px;
-    font-family: "Muli";
     font-size: 17px;
+    color: white;
 }
 
 .about_paragraph {
@@ -33,24 +33,25 @@ body{
 
 .links {
     padding: 10px;
+    color:  white;
 }
 
 hr {
-    border: 1px solid cornflowerblue;
+    border: 1px solid white;
 }
 
 h1 {
-    font-family: "Rubik One";
-    text-shadow: 0px 2px black;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0px 2px white;
 }
 
 h3 {
-    font-family: "Rubik One";
+    font-family: 'Press Start 2P', cursive;
 }
 
 a {
   text-decoration: none;
-  color: cornflowerblue;
+  color: white;
 }
 
 a:hover {
