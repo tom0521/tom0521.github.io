@@ -1,18 +1,6 @@
-body{
-}
-
 #myCanvas {
     background-color: black;
     position: fixed;
-}
-
-.text_color {
-    color: white;
-}
-
-.logo {
-    font-size: 30px;
-    font-family: 'Press Start 2P', cursive;
 }
 
 .centerfold {
@@ -21,62 +9,31 @@ body{
     color: white;
 }
 
-.about_paragraph {
-    padding: 15px;
-    font-size: 15px;
-}
-
-.about_topic {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 .links {
     padding: 10px;
     color:  white;
 }
 
-hr {
-    border: 1px solid white;
-}
-
 h1 {
     font-family: 'Press Start 2P', cursive;
-    text-shadow: 0px 2px white;
-}
-
-h3 {
-    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px grey;
+    color: white;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px grey;
+    color: white;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
     color: grey;
-}
-
-#graduation {
-    height: 200px;
-    width: auto;
-}
-
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+    text-shadow: none;
 }
 
 .row.content {
     height: 500px;
-}
-
-.sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
 }
 
 @media screen and (max-width: 767px) {
